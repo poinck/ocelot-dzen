@@ -1,3 +1,19 @@
+# Readme: ocelot-dzen
+
+**"ocelot-dzen"** is a fork from the loved `dzen`. The aim of this fork is better integration with the side-panel support of [ocelot][https://github.com/poinck/ocelot].
+
+## Changes
+
+**`^p1()`**
+*see chapter 5 "intext formatting .."*
+- jump to first line of slave window and draw from there. This is similar to `^cs()` without blanking all lines and therefore avoid flickering.
+
+## License
+All changes since 4.4.2016 from me are under CC0 if the MIT-license of `dzen` permits it.
+
+
+# Readme: dzen (original)
+```.txt
 ====================================
  dzen, (c) 2007-2010 by Robert Manea
 ====================================
@@ -606,3 +622,4 @@ Examples:
 
 
 Have fun.
+```
