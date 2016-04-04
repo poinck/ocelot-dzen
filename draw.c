@@ -1,9 +1,9 @@
-
 /*
-* (C)opyright 2007-2009 Robert Manea <rob dot manea at gmail dot com>
-* See LICENSE file for license details.
-*
-*/
+ * changes since 4.4.2016 by André Klausnitzer, CC0
+ *
+ * (C)opyright 2007-2009 Robert Manea <rob dot manea at gmail dot com>
+ * See LICENSE file for license details.
+ */
 
 #include "dzen.h"
 #include "action.h"
@@ -1041,6 +1041,11 @@ drawbody(char * text) {
 
 	write_buffer = parse_non_drawing_commands(text);
 
+    /* jump to first line of slave_window, pos 1 */
+	if (text[0] == '^' && text[1] == 'p' && text[2] == '1') {
+		free_buffer();
+		return;
+	}
 
 	if(text[0] == '^' && text[1] == 'c' && text[2] == 's') {
 		free_buffer();

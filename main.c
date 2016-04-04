@@ -1,7 +1,8 @@
 /*
+ * changes since 4.4.2016 by André Klausnitzer, CC0
+ *
  * (C)opyright 2007-2009 Robert Manea <rob dot manea at gmail dot com>
  * See LICENSE file for license details.
- *
  */
 
 #include "dzen.h"
@@ -1043,7 +1044,8 @@ main(int argc, char *argv[]) {
 		else if(!strncmp(argv[i], "-dock", 6))
 			use_ewmh_dock = 1;
 		else if(!strncmp(argv[i], "-v", 3)) {
-			printf("dzen-"VERSION", (C)opyright 2007-2009 Robert Manea\n");
+			printf("ocelot-dzen-0.1.0, André Klausnitzer, CC0\n");
+			printf("forked from: dzen-"VERSION", (C)opyright 2007-2009 Robert Manea\n");
 			printf(
 			"Enabled optional features: "
 #ifdef DZEN_XMP

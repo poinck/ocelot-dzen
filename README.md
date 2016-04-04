@@ -1,12 +1,31 @@
 # Readme: ocelot-dzen
 
-**"ocelot-dzen"** is a fork from the loved `dzen`. The aim of this fork is better integration with the side-panel support of [ocelot](https://github.com/poinck/ocelot).
+**"ocelot-dzen"** is a fork from the loved `dzen`. The aim of this fork is better integration with side-panel support of [ocelot](https://github.com/poinck/ocelot).
 
 ## Changes
 
 **`^p1()`**
-*see chapter 5 "intext formatting .."*
+*see original readme below, chapter 5 "intext formatting .."*
 - jump to first line of slave window and draw from there. This is similar to `^cs()` without blanking all lines and therefore avoid flickering.
+
+## Local install
+After you checked out ocelot-dzen make sure "/home/$USER/bin" is in your `$PATH` if you plan to install it locally:
+```.sh
+cd /home/$USER
+mkdir gits
+cd gits
+git clone https://github.com/poinck/ocelot-dzen.git
+cd ocelot-dzen
+make
+ln -s /home/$USER/gits/ocelot-dzen/ocelot-dzen ~/bin/ocelot-dzen
+```
+
+## Global install
+*see original readme below*
+```.sh
+make
+make install
+```
 
 ## License
 All changes since 4.4.2016 from me are under CC0 if the MIT-license of `dzen` permits it.
