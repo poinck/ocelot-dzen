@@ -1,6 +1,6 @@
 # Readme: ocelot-dzen
 
-**"ocelot-dzen"** is a fork from the loved `dzen`. The aim of this fork is better integration with the side-panel support of [ocelot][https://github.com/poinck/ocelot].
+**"ocelot-dzen"** is a fork from the loved `dzen`. The aim of this fork is better integration with the side-panel support of [ocelot](https://github.com/poinck/ocelot).
 
 ## Changes
 
