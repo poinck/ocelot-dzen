@@ -8,8 +8,7 @@
 *see original readme below, chapter 5 "intext formatting .."*
 - jump to first line of slave window and draw from there. This is similar to `^cs()` without blanking all lines and therefore avoid flickering.
 
-## Local install
-After you checked out ocelot-dzen make sure "/home/$USER/bin" is in your `$PATH` if you plan to install it locally:
+## Compile
 ```.sh
 cd /home/$USER
 mkdir gits
@@ -17,10 +16,14 @@ cd gits
 git clone https://github.com/poinck/ocelot-dzen.git
 cd ocelot-dzen
 make
+```
+
+If you do not plan to install ocelot-dzen system-wide, make sure "/home/$USER/bin" is in your `$PATH` and create following symlink:
+```.sh
 ln -s /home/$USER/gits/ocelot-dzen/ocelot-dzen ~/bin/ocelot-dzen
 ```
 
-## Global install
+## Install
 *see original readme below*
 ```.sh
 make
@@ -28,7 +31,7 @@ make install
 ```
 
 ## License
-All changes since 4.4.2016 from me are under CC0 if the MIT-license of `dzen` permits it.
+All changes since 4.4.2016 from me are under CC0 if the MIT-license of dzen permits it.
 
 
 # Readme: dzen (original)
